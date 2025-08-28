@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura de Dados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f8f9fa;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      display: none;
+      position: relative;
+    }
+
+    .content.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Tópicos da Turma</h1>
+
+  <div id="grid" class="grid"></div>
+
+  <div id="contentBox" class="content"></div>
+
+  <script>
+    const contentBox = document.getElementById("contentBox");
+    const grid = document.getElementById("grid");
+    let activeTopic = null; 
+
+    const topics = [
+        "Recursividade",
+        "Árvore Binária",
+        "Árvore Binária de Busca",
+        "Árvore AVL",
+        "HEAP",
+        "Hashing",
+        "Estruturas Genéricas",
+        "Tipo Abstrato de Dado",
+        "Backtracking",
+        "Grafos"
+    ];
+
+    const textos = [
+        "Conteúdo do Tópico 1. Aqui você descreve brevemente o assunto.",
+        "Conteúdo do Tópico 2. Explicação resumida e clara.",
+        "Conteúdo do Tópico 3. Detalhes importantes sobre o tema.",
+        "Conteúdo do Tópico 4. Mais informações sobre este tópico.",
+        "Conteúdo do Tópico 5. Texto explicativo aqui.",
+        "Conteúdo do Tópico 6. Explicação resumida e clara.",
+        "Conteúdo do Tópico 7. Detalhes importantes sobre o tema.",
+        "Conteúdo do Tópico 8. Mais informações sobre este tópico.",
+        "Conteúdo do Tópico 9. Texto explicativo aqui.",
+        "Conteúdo do Tópico 10. Conclusões ou dicas finais."
+    ];
+
+    for(let i=0; i<topics.length; i++)
+        grid.innerHTML = grid.innerHTML + `<div class="card" onclick="toggleContent(${i})">${topics[i]}</div>`;
+
+    function toggleContent(num) {
+      // se clicar no mesmo card já ativo → fecha
+      if (activeTopic === num) {
+        contentBox.classList.remove("active");
+        activeTopic = null;
+        return;
+      }
+
+      // atualiza conteúdo
+      contentBox.innerHTML = `<h2>Tópico ${num}</h2><p>${textos[num]}</p>`;
+      contentBox.classList.add("active");
+      activeTopic = num;
+    }
+
+    // fecha ao clicar fora do container e dos cards
+    document.addEventListener("click", function(event) {
+      const isClickInside = contentBox.contains(event.target) || event.target.classList.contains("card");
+      if (!isClickInside) {
+        contentBox.classList.remove("active");
+        activeTopic = null;
+      }
+    });
+  </script>
+</body>
+</html>
