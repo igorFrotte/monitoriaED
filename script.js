@@ -9,23 +9,67 @@ const topics = [
     "Árvore AVL",
     "Heap",
     "Hashing",
-    "Estruturas Genéricas",
-    "Tipo Abstrato de Dado",
     "Backtracking",
     "Grafos"
 ];
 
 const textos = [
-    "Conteúdo do Tópico 1. Aqui você descreve brevemente o assunto.",
-    "Conteúdo do Tópico 2. Explicação resumida e clara.",
-    "Conteúdo do Tópico 3. Detalhes importantes sobre o tema.",
-    "Conteúdo do Tópico 4. Mais informações sobre este tópico.",
-    "Conteúdo do Tópico 5. Texto explicativo aqui.",
-    "Conteúdo do Tópico 6. Explicação resumida e clara.",
-    "Conteúdo do Tópico 7. Detalhes importantes sobre o tema.",
-    "Conteúdo do Tópico 8. Mais informações sobre este tópico.",
-    "Conteúdo do Tópico 9. Texto explicativo aqui.",
-    "Conteúdo do Tópico 10. Conclusões ou dicas finais."
+    `📚 Livro: <br><br>
+    🎥 Vídeo: <a target='_blank'
+    href='https://www.youtube.com/watch?v=hEHAKk-bs54&list=PLqJK4Oyr5WSg3ciuTxJXYkjTPvb_LjYZP'
+    >Curso em Vídeo - Recursividade</a><br><br>
+    🌐 Site: <a target='_blank' 
+    href='https://visualgo.net/en/recursion'
+    >Visualgo</a>`,
+    `📚 Livro: <br><br>
+    🎥 Vídeo: <a target='_blank'
+    href='https://www.youtube.com/watch?v=dcOCsxiuKeU&list=PLqJK4Oyr5WShBuC5rqt9I0fMVNnaVTpeo'
+    >Árvore Binária em C</a><br><br>
+    🌐 Site: <a target='_blank' 
+    href='https://www.cs.usfca.edu/~galles/visualization/AVLtree.html'
+    >Simulador de Árvore</a>`,
+    `📚 Livro: <br><br>
+    🎥 Vídeo: <a target='_blank'
+    href='https://www.youtube.com/watch?v=eJ1-uwEjrc0&list=PLqJK4Oyr5WSii6sFzwC6xTuhfALuJVEKT'
+    >Árvore Binária de Busca em C</a><br><br>
+    🌐 Site: <a target='_blank' 
+    href='https://www.cs.usfca.edu/~galles/visualization/BST.html'
+    >Simulador de Árvore Binária de Busca</a>`,
+    `📚 Livro: <br><br>
+    🎥 Vídeo: <a target='_blank'
+    href='https://www.youtube.com/watch?v=5aBQZdvoM6w&list=PLqJK4Oyr5WSgUXgpurvc0TBQx_byFHAIJ'
+    >Árvore AVL em C</a><br><br>
+    🌐 Site: <a target='_blank' 
+    href='https://www.cs.usfca.edu/~galles/visualization/AVLtree.html'
+    >Simulador de Árvore AVL</a>`,
+    `📚 Livro: <br><br>
+    🎥 Vídeo: <a target='_blank'
+    href='https://www.youtube.com/watch?v=-nq88TldUX0'
+    >Heap em C</a><br><br>
+    🌐 Site: <a target='_blank' 
+    href='https://www.cs.usfca.edu/~galles/visualization/Heap.html'
+    >Simulador de Heap</a>`,
+    `📚 Livro: <br><br>
+    🎥 Vídeo: <a target='_blank'
+    href='https://www.youtube.com/watch?v=S-GP1UlmstU'
+    >Hashing em C</a><br><br>
+    🌐 Site: <a target='_blank' 
+    href='https://www.cs.usfca.edu/~galles/visualization/ClosedHash.html'
+    >Simulador de Hashing</a>`,
+    `📚 Livro: <br><br>
+    🎥 Vídeo: <a target='_blank'
+    href='https://www.youtube.com/watch?v=6e0cZZyod50'
+    >Backtracking em C</a><br><br>
+    🌐 Site: <a target='_blank' 
+    href='https://www.101computing.net/backtracking-algorithm-sudoku-solver/'
+    >Exemplo Sudoku em Python</a>`,
+    `📚 Livro: <br><br>
+    🎥 Vídeo: <a target='_blank'
+    href='https://www.youtube.com/watch?v=fTEL6pMMC-w'
+    >Grafos em C</a><br><br>
+    🌐 Site: <a target='_blank' 
+    href='https://graphonline.top/pt/'
+    >Simulador de Grafos</a>`,
 ];
 
 for(let i=0; i<topics.length; i++)

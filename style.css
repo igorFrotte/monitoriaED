@@ -51,3 +51,16 @@ h2 {
     text-align: center;
     margin-bottom: 40px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
