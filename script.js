@@ -14,56 +14,64 @@ const topics = [
 ];
 
 const textos = [
-    `📚 Livro: <br><br>
+    `📚 Livro: Introdução a estruturas de dados: com técnicas de programação em C.<br>
+    Capítulo 2 (noções de algoritmos e recursividade)<br><br>
     🎥 Vídeo: <a target='_blank'
     href='https://www.youtube.com/watch?v=hEHAKk-bs54&list=PLqJK4Oyr5WSg3ciuTxJXYkjTPvb_LjYZP'
     >Curso em Vídeo - Recursividade</a><br><br>
     🌐 Site: <a target='_blank' 
     href='https://visualgo.net/en/recursion'
     >Visualgo</a>`,
-    `📚 Livro: <br><br>
+    `📚 Livro: Introdução a estruturas de dados: com técnicas de programação em C.<br>
+    Capítulo 6 (Árvores) – primeira parte<br><br>
     🎥 Vídeo: <a target='_blank'
     href='https://www.youtube.com/watch?v=dcOCsxiuKeU&list=PLqJK4Oyr5WShBuC5rqt9I0fMVNnaVTpeo'
     >Árvore Binária em C</a><br><br>
     🌐 Site: <a target='_blank' 
     href='https://www.cs.usfca.edu/~galles/visualization/AVLtree.html'
     >Simulador de Árvore</a>`,
-    `📚 Livro: <br><br>
+    `📚 Livro: Introdução a estruturas de dados: com técnicas de programação em C.<br>
+    Capítulo 6 (Árvores de busca binária)<br><br>
     🎥 Vídeo: <a target='_blank'
     href='https://www.youtube.com/watch?v=eJ1-uwEjrc0&list=PLqJK4Oyr5WSii6sFzwC6xTuhfALuJVEKT'
     >Árvore Binária de Busca em C</a><br><br>
     🌐 Site: <a target='_blank' 
     href='https://www.cs.usfca.edu/~galles/visualization/BST.html'
     >Simulador de Árvore Binária de Busca</a>`,
-    `📚 Livro: <br><br>
+    `📚 Livro: Introdução a estruturas de dados: com técnicas de programação em C.<br>
+    Capítulo 6 (Árvores balanceadas)<br><br>
     🎥 Vídeo: <a target='_blank'
     href='https://www.youtube.com/watch?v=5aBQZdvoM6w&list=PLqJK4Oyr5WSgUXgpurvc0TBQx_byFHAIJ'
     >Árvore AVL em C</a><br><br>
     🌐 Site: <a target='_blank' 
     href='https://www.cs.usfca.edu/~galles/visualization/AVLtree.html'
     >Simulador de Árvore AVL</a>`,
-    `📚 Livro: <br><br>
+    `📚 Livro: Introdução a estruturas de dados: com técnicas de programação em C.<br>
+    Capítulo 7 (Listas de prioridade – Heap)<br><br>
     🎥 Vídeo: <a target='_blank'
     href='https://www.youtube.com/watch?v=-nq88TldUX0'
     >Heap em C</a><br><br>
     🌐 Site: <a target='_blank' 
     href='https://www.cs.usfca.edu/~galles/visualization/Heap.html'
     >Simulador de Heap</a>`,
-    `📚 Livro: <br><br>
+    `📚 Livro: Introdução a estruturas de dados: com técnicas de programação em C.<br>
+    Capítulo 7 (Tabelas de dispersão)<br><br>
     🎥 Vídeo: <a target='_blank'
     href='https://www.youtube.com/watch?v=S-GP1UlmstU'
     >Hashing em C</a><br><br>
     🌐 Site: <a target='_blank' 
     href='https://www.cs.usfca.edu/~galles/visualization/ClosedHash.html'
     >Simulador de Hashing</a>`,
-    `📚 Livro: <br><br>
+    `📚 Livro: Introdução a estruturas de dados: com técnicas de programação em C.<br>
+    Exemplos de recursividade e busca em Árvores/Grafos<br><br>
     🎥 Vídeo: <a target='_blank'
     href='https://www.youtube.com/watch?v=6e0cZZyod50'
     >Backtracking em C</a><br><br>
     🌐 Site: <a target='_blank' 
     href='https://www.101computing.net/backtracking-algorithm-sudoku-solver/'
     >Exemplo Sudoku em Python</a>`,
-    `📚 Livro: <br><br>
+    `📚 Livro: Introdução a estruturas de dados: com técnicas de programação em C.<br>
+    Capítulo 8 (Grafos e algoritmos associados)<br><br>
     🎥 Vídeo: <a target='_blank'
     href='https://www.youtube.com/watch?v=fTEL6pMMC-w'
     >Grafos em C</a><br><br>
